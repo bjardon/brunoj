@@ -92,9 +92,13 @@ code.inline {
   margin: 0;
 }
 
-code.block {
+code.block, output {
   display: block;
   padding: 20px;
   width: 70%;
   margin: 1em auto;
+}
+output {
+  border: 1px solid gray;
+  border-radius: 5px;
 }
