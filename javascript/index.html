@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="txtA" value="">
+    <input type="text" id="txtB" value="">
+    <input type="text" id="txtC" value="" disabled>
+    <button type="button" onclick="calc()">Calc</button>
+    <script type="text/javascript">
+      function calc(){
+        var a = parseInt(document.getElementById("txtA").value);
+        var b = parseInt(document.getElementById("txtB").value);
+        document.getElementById("txtC").value = ( a + b );
+        console.log(a);
+      }
+    </script>
+  </body>
+</html>
