@@ -92,13 +92,40 @@ code.inline {
   margin: 0;
 }
 
-code.block, output {
+code.block {
   display: block;
   padding: 20px;
   width: 70%;
   margin: 1em auto;
 }
-output {
+
+.calculator {
+  width: 70%;
+  margin: 30px auto;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 10px;
+  clear: both;
+}
+.calculator input, .calculator button {
+  font-size: 2em;
   border: 1px solid gray;
   border-radius: 5px;
+  padding: 10px;
+  margin: 5px auto;
+  width: 40%;
+}
+.calculator button {
+  color: black;
+  background-color: #FFDE90;
+}
+.calculator button:hover {
+  color: white;
+  background-color: black;
+}
+.calculator input.result {
+  float: right;
+  top: 0;
+  background-color: #1141B2;
+  color: white;
 }
