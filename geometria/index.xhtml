@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Calculadora de geometría</title>
+    <base href="../"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed:400,700|Share+Tech+Mono" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <script src="js/areas.js"></script>
+  </head>
+  <body>
+    <div class="container" id="top">
+      <header>
+        <h1>Bruno Jardón</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="geometria#top" class="current">Inicio</a></li>
+          <li><a href="geometria#cuadrado">Cuadrado</a></li>
+          <li><a href="geometria#rectangulo">Rectángulo</a></li>
+          <li><a href="geometria#triangulo">Triángulo</a></li>
+          <li><a href="geometria#circulo">Círculo</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <h1>Cálculo de áreas <small>Introducción</small></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <section id="cuadrado">
+          <h1>Cálculo del área de un cuadrado</h1>
+          <p>Se realiza mediante la fórmula <code>l²</code>, siendo <code>l</code> el tamaño de los lados de un cuadrado.</p>
+          <form class="calculator">
+            <input type="text" id="txtSquareArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
+            <input type="text" id="txtSquareSide" placeholder="Lado"/><br/>
+            <button type="button" onclick="calculateSquare()">Calcular</button>
+          </form>
+        </section>
+        <section id="rectangulo">
+          <h1>Cálculo del área de un rectángulo</h1>
+          <p>Se realiza mediante la fórmula <code>b*h</code>, donde <code>b</code> es el tamaño de la base y <code>h</code> es la altura del rectángulo.</p>
+          <form class="calculator">
+            <input type="text" id="txtRectArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
+            <input type="text" id="txtRectBase" placeholder="Base"/><br/>
+            <input type="text" id="txtRectHeight" placeholder="Altura"/><br/>
+            <button type="button" onclick="calculateRect()">Calcular</button>
+          </form>
+        </section>
+        <section id="triangulo">
+          <h1>Cálculo del área de un triángulo</h1>
+          <p>Se realiza mediante la fórmula <code>(b*h)/2</code>, donde <code>b</code> es el tamaño de la base y <code>h</code> es la altura del triángulo.</p>
+          <form class="calculator">
+            <input type="text" id="txtTriangleArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
+            <input type="text" id="txtTriangleBase" placeholder="Base"/><br/>
+            <input type="text" id="txtTriangleHeight" placeholder="Altura"/><br/>
+            <button type="button" onclick="calculateTriangle()">Calcular</button>
+          </form>
+        </section>
+        <section id="circulo">
+          <h1>Cálculo del área de un círculo</h1>
+          <p>Se realiza mediante la fórmula <code>pi*r²</code>, donde r es el radio del círculo.</p>
+          <form class="calculator">
+            <input type="text" id="txtCircleArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
+            <input type="text" id="txtCircleRadius" placeholder="Radio"/><br/>
+            <button type="button" onclick="calculateCircle()">Calcular</button>
+          </form>
+        </section>
+      </main>
+      <footer ondblclick="console.log(':v')">
+        Bruno Jardón 2017
+      </footer>
+    </div>
+  </body>
+</html>
