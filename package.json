@@ -1,0 +1,22 @@
+{
+  "name": "brunoj",
+  "version": "1.0.0",
+  "description": "School project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjardon/brunoj.git"
+  },
+  "author": "Bruno Jardon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjardon/brunoj/issues"
+  },
+  "homepage": "https://github.com/bjardon/brunoj#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
