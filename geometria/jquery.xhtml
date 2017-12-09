@@ -6,12 +6,12 @@
     <base href="../"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed:400,700|Share+Tech+Mono" rel="stylesheet"/>
     <link rel="stylesheet" href="css/layout.css"/>
-    <script src="js/areas.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
   </head>
   <body>
     <div class="container" id="top">
       <header>
-        <h1>Calculadora de Geometría con JS Nativo</h1>
+        <h1>Calculadora de Geometría con jQuery</h1>
       </header>
       <nav>
         <ul>
@@ -36,7 +36,7 @@
           <form class="calculator">
             <input type="text" id="txtSquareArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
             <input type="text" id="txtSquareSide" placeholder="Lado"/><br/>
-            <button type="button" onclick="calculateSquare()">Calcular</button>
+            <button type="button" id="btnSquare">Calcular</button>
           </form>
         </section>
         <section id="rectangulo">
@@ -46,7 +46,7 @@
             <input type="text" id="txtRectArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
             <input type="text" id="txtRectBase" placeholder="Base"/><br/>
             <input type="text" id="txtRectHeight" placeholder="Altura"/><br/>
-            <button type="button" onclick="calculateRect()">Calcular</button>
+            <button type="button" id="btnRect">Calcular</button>
           </form>
         </section>
         <section id="triangulo">
@@ -56,7 +56,7 @@
             <input type="text" id="txtTriangleArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
             <input type="text" id="txtTriangleBase" placeholder="Base"/><br/>
             <input type="text" id="txtTriangleHeight" placeholder="Altura"/><br/>
-            <button type="button" onclick="calculateTriangle()">Calcular</button>
+            <button type="button" id="btnTriangle">Calcular</button>
           </form>
         </section>
         <section id="circulo">
@@ -65,7 +65,7 @@
           <form class="calculator">
             <input type="text" id="txtCircleArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
             <input type="text" id="txtCircleRadius" placeholder="Radio"/><br/>
-            <button type="button" onclick="calculateCircle()">Calcular</button>
+            <button type="button" id="btnCircle">Calcular</button>
           </form>
         </section>
         <section id="trapecio">
@@ -76,7 +76,7 @@
             <input type="text" id="txtTrapezoidMinorBase" placeholder="Base Menor"/><br/>
             <input type="text" id="txtTrapezoidMayorBase" placeholder="Base Mayor"/><br/>
             <input type="text" id="txtTrapezoidHeight" placeholder="Altura"/><br/>
-            <button type="button" onclick="calculateTrapezoid()">Calcular</button>
+            <button type="button" id="btnTrapezoid">Calcular</button>
           </form>
         </section>
         <section id="rombo">
@@ -86,7 +86,7 @@
             <input type="text" id="txtDiamondArea" class="result" placeholder="Resultado" disabled="disabled"/><br/>
             <input type="text" id="txtDiamondMinorDiagonal" placeholder="Diagonal Menor"/><br/>
             <input type="text" id="txtDiamondMayorDiagonal" placeholder="Diagonal Mayor"/><br/>
-            <button type="button" onclick="calculateDiamond()">Calcular</button>
+            <button type="button" id="btnDiamond">Calcular</button>
           </form>
         </section>
         <section id="poligono">
@@ -97,7 +97,7 @@
             <input type="text" id="txtPolygonSideCount" placeholder="Numero de lados"/><br/>
             <input type="text" id="txtPolygonSide" placeholder="Lado"/><br/>
             <input type="text" id="txtPolygonApothem" placeholder="Apotema"/><br/>
-            <button type="button" onclick="calculatePolygon()">Calcular</button>
+            <button type="button" id="btnPolygon">Calcular</button>
           </form>
         </section>
       </main>
@@ -105,5 +105,6 @@
         Bruno Jardón 2017
       </footer>
     </div>
+    <script src="js/areasJquery.js"></script>
   </body>
 </html>
